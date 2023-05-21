@@ -2,12 +2,8 @@ package be.jonasboon.exceltofinancefile.service;
 
 import be.jonasboon.exceltofinancefile.model.Message;
 import be.jonasboon.exceltofinancefile.model.RandomNumberArray;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import java.util.Random;
-import java.util.stream.IntStream;
 
 @Service
 public class FuncService {
