@@ -3,6 +3,7 @@ package be.jonasboon.exceltofinancefile.mapper;
 import be.jonasboon.exceltofinancefile.dto.shape.ShapeDTO;
 import be.jonasboon.exceltofinancefile.model.Coordinates;
 import be.jonasboon.exceltofinancefile.model.Shape;
+import lombok.experimental.Accessors;
 import lombok.experimental.UtilityClass;
 
 import java.util.List;
@@ -34,7 +35,7 @@ public class ShapeMapper {
                 .collect(Collectors.toList());
     }
 
-    public static Shape DTOtoEntity(ShapeDTO shape) {
+    public Shape DTOtoEntity(ShapeDTO shape) {
         Coordinates coordinates = new Coordinates(shape.getX(), shape.getY());
 
         return Shape.builder()

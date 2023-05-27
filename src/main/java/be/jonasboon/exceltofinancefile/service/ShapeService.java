@@ -1,6 +1,6 @@
 package be.jonasboon.exceltofinancefile.service;
 
-import be.jonasboon.exceltofinancefile.dto.exception.ValidationException;
+import be.jonasboon.exceltofinancefile.exception.ValidationException;
 import be.jonasboon.exceltofinancefile.dto.shape.ShapeDTO;
 import be.jonasboon.exceltofinancefile.mapper.ShapeMapper;
 import be.jonasboon.exceltofinancefile.model.Shape;

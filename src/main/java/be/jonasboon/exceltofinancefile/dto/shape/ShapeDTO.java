@@ -1,6 +1,6 @@
 package be.jonasboon.exceltofinancefile.dto.shape;
 
-import be.jonasboon.exceltofinancefile.dto.exception.ValidationException;
+import be.jonasboon.exceltofinancefile.exception.ValidationException;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
