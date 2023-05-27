@@ -1,6 +1,9 @@
 package be.jonasboon.exceltofinancefile.dto;
 
+import be.jonasboon.exceltofinancefile.exception.ValidationException;
 import lombok.*;
+import org.springframework.util.StringUtils;
+import org.springframework.validation.annotation.Validated;
 
 
 @Getter

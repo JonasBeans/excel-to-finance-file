@@ -9,6 +9,7 @@ public class TicketMapper {
 
     public Ticket toEntity(TicketDTO ticketDTO){
         return Ticket.builder()
+                .withId(ticketDTO.getId())
                 .withFirstName(ticketDTO.getFirstName())
                 .withLastName(ticketDTO.getLastName())
                 .withStatus(ticketDTO.getStatus())

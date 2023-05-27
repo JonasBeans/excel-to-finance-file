@@ -2,7 +2,6 @@ package be.jonasboon.exceltofinancefile.controller;
 
 
 import be.jonasboon.exceltofinancefile.dto.TicketDTO;
-import be.jonasboon.exceltofinancefile.model.Ticket;
 import be.jonasboon.exceltofinancefile.service.TicketService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +19,7 @@ public class TicketController {
     }
 
     @GetMapping("/{id}")
-    public TicketDTO getTicketById(@PathVariable Integer id){
+    public TicketDTO getTicketById(@PathVariable String id){
         return ticketService.getTicketById(id);
     }
 
@@ -32,5 +31,15 @@ public class TicketController {
     @PostMapping
     public ResponseEntity createTicket(@RequestBody TicketDTO ticket){
         return ticketService.createTicket(ticket);
+    }
+
+    @PutMapping()
+    public ResponseEntity updateTicket(@RequestBody TicketDTO ticket){
+        return ticketService.updateTicket(ticket);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteTicketById(@PathVariable String id){
+        return ticketService.deleteTicketById(id);
     }
 }
